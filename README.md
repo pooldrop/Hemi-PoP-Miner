@@ -8,10 +8,10 @@ You will get tHEMI tokens for each block you mine with your Hemi Pop Node
 sudo apt-get update && sudo apt-get upgrade -y
 ```
 ```bash
-wget https://github.com/hemilabs/heminetwork/releases/download/v0.4.3/heminetwork_v0.4.3_linux_amd64.tar.gz
+wget https://github.com/hemilabs/heminetwork/releases/download/v0.4.5/heminetwork_v0.4.5_linux_amd64.tar.gz
 ```
 ```bash
-tar -xvf heminetwork_v0.4.3_linux_amd64.tar.gz && rm heminetwork_v0.4.3_linux_amd64.tar.gz && cd heminetwork_v0.4.3_linux_amd64
+tar -xvf heminetwork_v0.4.5_linux_amd64.tar.gz && rm heminetwork_v0.4.5_linux_amd64.tar.gz && cd heminetwork_v0.4.5_linux_amd64
 ```
 
 Creat wallet
@@ -39,10 +39,9 @@ screen -S hemi
 > Replace your private key
 
 ```bash
-echo 'export POPM_BTC_PRIVKEY=PRIVATE_KEY' >> ~/.bashrc
-echo 'export POPM_STATIC_FEE=50' >> ~/.bashrc
-echo 'export POPM_BFG_URL=wss://testnet.rpc.hemi.network/v1/ws/public' >> ~/.bashrc
-source ~/.bashrc
+export POPM_BTC_PRIVKEY=<private_key>
+export POPM_STATIC_FEE=50
+export POPM_BFG_URL=wss://testnet.rpc.hemi.network/v1/ws/public
 ```
 
 ```bash
